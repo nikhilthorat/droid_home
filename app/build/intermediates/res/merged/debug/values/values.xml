@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Android%20Dev/Source/HomeAutomation/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">HOME AUTOMATION</string>
+    <string name="connect_button">CONNECT TO HOME</string>
+    <string name="missingOptions">Server address or Port number is missing. Please correct or press back arrow cancel.</string>
+    <string name="port">Port</string>
+    <string name="portHint">1883</string>
+    <string name="server">Server</string>
+    <string name="serverURIHint">192.168.1.1</string>
+</resources>
