@@ -113,9 +113,8 @@ public class Connection implements Serializable {
         }
     }
 
-    public void publish() {
-        String topic = "HOME/SWITCH1";
-        String message = "ONN";
+    public void publish(String switchName, String message) {
+        String topic = "HOME/" + switchName;
         try {
             mqtt_client.publish(topic, message.getBytes(), 0, true, null, new ActionListener(context, ActionListener.Action.PUBLISH, this, (String) null));
         }

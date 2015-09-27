@@ -1,43 +1,41 @@
 package org.eclipse.paho.android.service.sample;
 
-import android.app.Activity;
+import java.util.ArrayList;
+import java.util.List;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.CompoundButton;
+import android.widget.ListView;
 import android.widget.Switch;
 
 /**
  * Created by Nikhil on 26/09/2015.
  */
-public class SwitchBoard  extends Activity {
-    private Switch Bulb1;
+public class SwitchBoard  extends ListActivity{
 
+    /** Called when the activity is first created. */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.switchboard);
 
-        Bulb1 = (Switch) findViewById(R.id.bulb1);
+        ListView listView = getListView();
+        List<RowItem> rowItems;
 
-        //attach a listener to check for changes in state
-        Bulb1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        rowItems = new ArrayList<RowItem>();
+        String[] switchInfo = getResources().getStringArray(R.array.switches);
 
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView,
-                                         boolean isChecked) {
+        Intent intent = getIntent();
+        Connection c = (Connection) intent.getSerializableExtra("ConnectionHandle");
 
-                if(isChecked){
-                    Intent intent = getIntent();
-                    Connection c = (Connection) intent.getSerializableExtra("ConnectionHandle");
+        for (int i = 0; i < switchInfo.length; i++) {
+            String[] separated = switchInfo[i].split(",");
+            int imageID = getResources().getIdentifier("@drawable/"+separated[1],
+                    "id", getPackageName());
+            RowItem item = new RowItem(imageID, separated[0], new Switch(this));
+            rowItems.add(item);
+        }
 
-                    c.publish();
-
-                }else{
-
-                }
-
-            }
-        });
-
+        setListAdapter(new CustomListViewAdapter(this, R.layout.list_item, rowItems, c));
     }
 }

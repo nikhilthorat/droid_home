@@ -2,6 +2,14 @@
 <resources>
     <!-- From: file:/D:/Android%20Dev/Source/HomeAutomation/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string-array name="switches">
+        <item>BULB1,bulb</item>
+        <item>CFL1,cfl</item>
+        <item>BULB3,bulb</item>
+        <item>TUBE1,tube</item>
+        <item>TUBE2,tube</item>
+        <item>TV1,tv</item>
+    </string-array>
     <string name="app_name">HOME AUTOMATION</string>
     <string name="connect_button">CONNECT TO HOME</string>
     <string name="missingOptions">Server address or Port number is missing. Please correct or press back arrow cancel.</string>
