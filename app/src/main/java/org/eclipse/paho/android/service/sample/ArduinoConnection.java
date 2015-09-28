@@ -2,16 +2,18 @@ package org.eclipse.paho.android.service.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.app.ActionBar;
 
 /**
  * Created by Nikhil on 23/09/2015.
  */
-public class ArduinoConnection extends Activity {
+public class ArduinoConnection extends ActionBarActivity {
 
     private final String TAG = "ArduinoConnection";
     private ArduinoConnection mainThreadContext = this;
