@@ -19,18 +19,26 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
     Context context;
     Connection c;
 
+    /*private view holder class*/
+    private class ViewHolder {
+        ImageView imageView;
+        TextView txtView;
+        Switch sw;
+    }
+
     private class OnItemClickListener implements View.OnClickListener {
         private int mPosition;
-        private String mText;
+        private ViewHolder holder;
 
-        OnItemClickListener(int position, String text){
-            mPosition = position;
-            mText = text;
+        OnItemClickListener(int position, ViewHolder holder){
+            this.mPosition = position;
+            this.holder = holder;
         }
 
         @Override
         public void onClick(View arg0) {
-            Log.d("LIST_DEMO", "onItemClick at position " + mPosition + " " + mText);
+            Log.d("LIST_DEMO", "onItemClick at position " + mPosition + " " + holder.txtView.getText());
+            holder.sw.toggle();
         }
     }
 
@@ -39,13 +47,6 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
         super(context, resourceId, items);
         this.context = context;
         this.c = c;
-    }
-
-    /*private view holder class*/
-    private class ViewHolder {
-        ImageView imageView;
-        TextView txtView;
-        Switch sw;
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -89,7 +90,7 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
             }
         });
 
-        convertView.setOnClickListener(new OnItemClickListener(position, rowItem.getText()));
+        convertView.setOnClickListener(new OnItemClickListener(position, holder));
         return convertView;
     }
 }

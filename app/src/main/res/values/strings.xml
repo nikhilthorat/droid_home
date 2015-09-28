@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">HOME AUTOMATION</string>
+    <string name="app_name">Home Automation</string>
 
-    <string name="connect_button">CONNECT TO HOME</string>
+    <string name="connect_button">Connect To Home</string>
 
     <!-- Hints -->
     <string name="serverURIHint">192.168.1.1</string>
