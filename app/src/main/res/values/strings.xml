@@ -13,13 +13,39 @@
 
     <string name="missingOptions">Server address or Port number is missing. Please correct or press back arrow cancel.</string>
 
-    <string-array name="switches">
+    <string-array name="image_ids">
+        <item>hall1</item>
+        <item>bedroom1</item>
+        <item>bedroom2</item>
+        <item>kitchen</item>
+    </string-array>
+
+    <string-array name="hall1">
         <item>BULB1,bulb</item>
         <item>CFL1,cfl</item>
         <item>BULB2,bulb</item>
         <item>TUBE1,tube</item>
         <item>TUBE2,tube</item>
         <item>TV1,tv</item>
+    </string-array>
+
+    <string-array name="bedroom1">
+        <item>TUBE1,tube</item>
+        <item>TUBE2,tube</item>
+        <item>BULB1,bulb</item>
+        <item>CFL1,cfl</item>
+        <item>BULB2,bulb</item>
+    </string-array>
+
+    <string-array name="bedroom2">
+        <item>BULB1,bulb</item>
+        <item>CFL1,cfl</item>
+        <item>BULB2,bulb</item>
+    </string-array>
+
+    <string-array name="kitchen">
+        <item>BULB1,bulb</item>
+        <item>CFL1,cfl</item>
     </string-array>
 
 </resources>

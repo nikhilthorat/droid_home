@@ -3,9 +3,6 @@ package org.eclipse.paho.android.service.sample;
 import android.content.Context;
 import android.widget.Toast;
 
-/**
- * Created by Nikhil on 23/09/2015.
- */
 public class Notify {
 
     /**

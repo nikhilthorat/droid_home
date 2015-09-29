@@ -12,7 +12,7 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 public class ActivityConstants {
 
     /** Application TAG for logs where class name is not used*/
-    static final String TAG = "MQTT Android";
+    static final String TAG = "DROID HOME";
 
    /*Default values **/
 
@@ -71,6 +71,5 @@ public class ActivityConstants {
     /** Space String Literal **/
     static final String space = " ";
     /** Empty String for comparisons **/
-    static final String empty = new String();
-
+    static final String empty = "";
 }

@@ -1,16 +1,10 @@
 package org.eclipse.paho.android.service.sample;
 
-/**
- * Created by Nikhil on 25/09/2015.
- */
-import org.eclipse.paho.android.service.sample.R;
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import android.content.Context;
 import android.widget.Toast;
-
-import org.eclipse.paho.android.service.sample.Connection.ConnectionStatus;
 
 /**
  * Handles call backs from the MQTT Client

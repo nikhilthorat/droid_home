@@ -2,11 +2,25 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\Nikhil\.gradle\caches\modules-2\files-2.1\org.eclipse.paho\org.eclipse.paho.client.mqttv3\1.0.2\11752d3f24d1a9deda4533a7ca18d8496417ceeb\org.eclipse.paho.client.mqttv3-1.0.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="11752d3f24d1a9deda4533a7ca18d8496417ceeb">
+        <dex dex="D:\Android Dev\Source\HomeAutomation\app\build\intermediates\pre-dexed\debug\org.eclipse.paho.client.mqttv3-1.0.2-cf834e4af93f6d0e64b37afb4ee6e7d97336c3d9.jar" />
+    </item>
+    <item
         jar="D:\Android Dev\Source\HomeAutomation\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\18.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
         <dex dex="D:\Android Dev\Source\HomeAutomation\app\build\intermediates\pre-dexed\debug\classes-fe20e3a19bb04bf9b60854a5f766ed45d9e24855.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\Android Dev\Source\HomeAutomation\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-1f70292c3662d6b1f5ceee769de40c15230cdffa.jar" />
     </item>
 
 </items>

@@ -1,16 +1,12 @@
 package org.eclipse.paho.android.service.sample;
 
-/**
- * Created by Nikhil on 25/09/2015.
- */
-
 import org.eclipse.paho.client.mqttv3.IMqttActionListener;
 import org.eclipse.paho.client.mqttv3.IMqttToken;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.widget.Toast;
-import org.eclipse.paho.android.service.sample.Connection.ConnectionStatus;
 
 /**
  * This Class handles receiving information from the
@@ -18,6 +14,7 @@ import org.eclipse.paho.android.service.sample.Connection.ConnectionStatus;
  * the action
  */
 class ActionListener implements IMqttActionListener {
+    private final String TAG = "DROID_HOME";
     /**
      * Actions that can be performed Asynchronously <strong>and</strong> associated with a
      * {@link ActionListener} object
@@ -39,8 +36,6 @@ class ActionListener implements IMqttActionListener {
      * <code>ActionListener</code>
      **/
     private Action action;
-    /** The arguments passed to be used for formatting strings**/
-    private String[] additionalArgs;
     /** {@link Context} for performing various operations **/
     private Context context;
     private Connection ConnectionHandle;
@@ -53,14 +48,10 @@ class ActionListener implements IMqttActionListener {
      *            The application context
      * @param action
      *            The action that is being performed
-     * @param additionalArgs
-     *            Used for as arguments for string formating
      */
-    public ActionListener(Context context, Action action,
-                          Connection ConnectionHandle, String... additionalArgs) {
+    public ActionListener(Context context, Action action, Connection ConnectionHandle) {
         this.context = context;
         this.action = action;
-        this.additionalArgs = additionalArgs;
         this.ConnectionHandle = ConnectionHandle;
     }
 
@@ -95,7 +86,7 @@ class ActionListener implements IMqttActionListener {
      * user of success
      */
     private void publish() {
-        Notify.toast(context, "Publish Successful", Toast.LENGTH_LONG);
+        Log.d(TAG, "Publish Successful");
     }
 
     /**
@@ -104,15 +95,19 @@ class ActionListener implements IMqttActionListener {
      * the user of success
      */
     private void subscribe() {
-        Notify.toast(context, "Subscribed to Home", Toast.LENGTH_LONG);
+        Log.d(TAG, "Subscribed to Home");
         if(!switchboard_started)
         {
-            Intent swboardIntent = new Intent(context, SwitchBoard.class);
+            /*Intent swboardIntent = new Intent(context, SwitchBoard.class);
+            swboardIntent.putExtra("ConnectionHandle", ConnectionHandle);
+            context.startActivity(swboardIntent);
+            switchboard_started = true;*/
+
+            Intent swboardIntent = new Intent(context, HomeView.class);
             swboardIntent.putExtra("ConnectionHandle", ConnectionHandle);
             context.startActivity(swboardIntent);
             switchboard_started = true;
         }
-        /*ConnectionHandle.publish();*/
     }
 
     /**
@@ -121,7 +116,7 @@ class ActionListener implements IMqttActionListener {
      * then notify the user of success.
      */
     private void disconnect() {
-        Notify.toast(context, "Disconnected from Home", Toast.LENGTH_LONG);
+        Log.d(TAG, "Disconnect successful");
     }
 
     /**
@@ -168,7 +163,7 @@ class ActionListener implements IMqttActionListener {
      *            This argument is not used
      */
     private void publish(Throwable exception) {
-        Notify.toast(context, "Publish unsuccessful", Toast.LENGTH_LONG);
+        Log.e(TAG, "Publish failed");
     }
 
     /**
@@ -176,7 +171,7 @@ class ActionListener implements IMqttActionListener {
      * @param exception This argument is not used
      */
     private void subscribe(Throwable exception) {
-        Notify.toast(context, "Could not subscribe to Home", Toast.LENGTH_LONG);
+        Log.e(TAG, "Subscribe failed");
     }
 
     /**
@@ -184,7 +179,7 @@ class ActionListener implements IMqttActionListener {
      * @param exception This argument is not used
      */
     private void disconnect(Throwable exception) {
-        Notify.toast(context, "Could not disconnect from Home", Toast.LENGTH_LONG);
+        Log.e(TAG, "Disconnect failed");
     }
 
     /**

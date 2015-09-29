@@ -5,20 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/connectButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/connect_button" />
-
     <LinearLayout
         android:id="@+id/serverGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:layout_below="@id/connectButton" >
+        android:layout_alignParentLeft="true" >
 
         <TextView
             android:id="@+id/serverTextView"
@@ -60,5 +52,16 @@
             android:hint="@string/portHint"
             android:inputType="number" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="60dip"
+        android:text="@string/connect_button"
+        android:layout_below="@id/portGroup" />
 
 </RelativeLayout><!-- From: file:/D:/Android%20Dev/Source/HomeAutomation/app/src/main/res/layout/main.xml -->

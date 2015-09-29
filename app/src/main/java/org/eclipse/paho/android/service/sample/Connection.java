@@ -11,11 +11,9 @@ import org.eclipse.paho.client.mqttv3.MqttSecurityException;
 
 import java.io.Serializable;
 
-/**
- * Created by Nikhil on 25/09/2015.
- */
 public class Connection implements Serializable {
 
+    private final String TAG = "DROID_HOME";
     /** {@link Context} for performing various operations **/
     public static Context context;
     public static MqttAndroidClient mqtt_client;
@@ -49,26 +47,20 @@ public class Connection implements Serializable {
     public void connect()
     {
         MqttConnectOptions conOpt = new MqttConnectOptions();
-        String uri = null;
+        String uri;
         int portno = Integer.parseInt(port);
-        // last will message
-        String message = (String) (ActivityConstants.message);
-        String topic = (String) (ActivityConstants.topic);
-        Integer qos = (Integer) 1;
-        Boolean retained = false;
-        boolean cleanSession = false;
 
         // connection options
-        String username = (String) (ActivityConstants.username);
-        String password = (String) (ActivityConstants.password);
-        int timeout = (Integer) 10000;
-        int keepalive = (Integer) 50000;
+        String username = ActivityConstants.username;
+        String password = ActivityConstants.password;
+        int timeout = 1000;
+        int keepalive = 5000;
 
         String notificationText = "Connecting " + clientId + " to : "+ server + "@" + port;
         Notify.toast(context, notificationText, Toast.LENGTH_LONG);
 
         final ActionListener callback = new ActionListener(context,
-                ActionListener.Action.CONNECT, this, (String) null);
+                ActionListener.Action.CONNECT, this);
 
         uri = "tcp://" + server + ":" + portno;
 
@@ -77,7 +69,7 @@ public class Connection implements Serializable {
 
         client.setCallback(new MqttCallbackHandler(context, clientId));
 
-        conOpt.setCleanSession(cleanSession);
+        conOpt.setCleanSession(true);
         conOpt.setConnectionTimeout(timeout);
         conOpt.setKeepAliveInterval(keepalive);
         if (!username.equals(ActivityConstants.empty)) {
@@ -91,38 +83,35 @@ public class Connection implements Serializable {
             client.connect(conOpt, null, callback);
         }
         catch (MqttException e) {
-            Log.e(context.getClass().getCanonicalName(),
-                    "MqttException Occured", e);
+            Log.e(TAG, "MqttException Occured", e);
         }
     }
 
     public void subscribe()
     {
         String topic = "HOME/SWITCH1";
-        String[] topics = new String[1];
-        topics[0] = topic;
 
         try {
-            mqtt_client.subscribe(topic, 0, null, new ActionListener(context, ActionListener.Action.SUBSCRIBE, this, (String) null));
+            mqtt_client.subscribe(topic, 0, null, new ActionListener(context, ActionListener.Action.SUBSCRIBE, this));
         }
         catch (MqttSecurityException e) {
-            Log.e(this.getClass().getCanonicalName(), "Failed to subscribe to" + topic + " the client with the handle " + clientId, e);
+            Log.e(TAG, "Failed to subscribe to" + topic + " the client with the handle " + clientId, e);
         }
         catch (MqttException e) {
-            Log.e(this.getClass().getCanonicalName(), "Failed to subscribe to" + topic + " the client with the handle " + clientId, e);
+            Log.e(TAG, "Failed to subscribe to" + topic + " the client with the handle " + clientId, e);
         }
     }
 
     public void publish(String switchName, String message) {
         String topic = "HOME/" + switchName;
         try {
-            mqtt_client.publish(topic, message.getBytes(), 0, true, null, new ActionListener(context, ActionListener.Action.PUBLISH, this, (String) null));
+            mqtt_client.publish(topic, message.getBytes(), 0, true, null, new ActionListener(context, ActionListener.Action.PUBLISH, this));
         }
         catch (MqttSecurityException e) {
-            Log.e(this.getClass().getCanonicalName(), "Failed to publish a messged from the client with the handle " + clientId, e);
+            Log.e(TAG, "Failed to publish a message from the client with the handle " + clientId, e);
         }
         catch (MqttException e) {
-            Log.e(this.getClass().getCanonicalName(), "Failed to publish a messged from the client with the handle " + clientId, e);
+            Log.e(TAG, "Failed to publish a message from the client with the handle " + clientId, e);
         }
     }
 }

@@ -2,13 +2,35 @@
 <resources>
     <!-- From: file:/D:/Android%20Dev/Source/HomeAutomation/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string-array name="switches">
+    <string-array name="bedroom1">
+        <item>TUBE1,tube</item>
+        <item>TUBE2,tube</item>
+        <item>BULB1,bulb</item>
+        <item>CFL1,cfl</item>
+        <item>BULB2,bulb</item>
+    </string-array>
+    <string-array name="bedroom2">
+        <item>BULB1,bulb</item>
+        <item>CFL1,cfl</item>
+        <item>BULB2,bulb</item>
+    </string-array>
+    <string-array name="hall1">
         <item>BULB1,bulb</item>
         <item>CFL1,cfl</item>
         <item>BULB2,bulb</item>
         <item>TUBE1,tube</item>
         <item>TUBE2,tube</item>
         <item>TV1,tv</item>
+    </string-array>
+    <string-array name="image_ids">
+        <item>hall1</item>
+        <item>bedroom1</item>
+        <item>bedroom2</item>
+        <item>kitchen</item>
+    </string-array>
+    <string-array name="kitchen">
+        <item>BULB1,bulb</item>
+        <item>CFL1,cfl</item>
     </string-array>
     <!-- From: file:/D:/Android%20Dev/Source/HomeAutomation/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/values/values.xml -->
     <eat-comment/>
@@ -84,6 +106,10 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
+    <!-- From: file:/D:/Android%20Dev/Source/HomeAutomation/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="blue">#00abea</color>
+    <color name="white">#ffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr format="dimension" name="itemPadding"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ActionBarWindow"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowSplitActionBar"/></declare-styleable>
@@ -100,6 +126,8 @@
     <declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode"><enum name="dialog" value="0"/><enum name="dropdown" value="1"/></attr><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr format="reference" name="popupPromptView"/><attr name="android:gravity"/><attr format="boolean" name="disableChildrenWhenDisabled"/></declare-styleable>
     <declare-styleable name="Theme"><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="popupMenuStyle"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
+    <!-- From: file:/D:/Android%20Dev/Source/HomeAutomation/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/values/values.xml -->
+    <eat-comment/>
     <dimen name="abc_action_bar_default_height">48dip</dimen>
     <dimen name="abc_action_bar_icon_vertical_padding">8dip</dimen>
     <dimen name="abc_action_bar_stacked_max_height">48dp</dimen>

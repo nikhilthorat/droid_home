@@ -2,9 +2,6 @@ package org.eclipse.paho.android.service.sample;
 
 import android.widget.Switch;
 
-/**
- * Created by Nikhil on 27/09/2015.
- */
 public class RowItem {
 
     private int imageId;

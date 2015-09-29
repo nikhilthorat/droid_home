@@ -33,6 +33,10 @@
             </intent-filter>
         </activity>
 
+        <!-- HomeView -->
+        <activity android:name="org.eclipse.paho.android.service.sample.HomeView" >
+        </activity>
+
         <!-- Switch Board -->
         <activity android:name="org.eclipse.paho.android.service.sample.SwitchBoard" >
         </activity>

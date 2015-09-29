@@ -3,14 +3,11 @@ package org.eclipse.paho.android.service.sample;
 import java.util.ArrayList;
 import java.util.List;
 import android.app.ListActivity;
-import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.widget.ListView;
+import android.util.Log;
 import android.widget.Switch;
 
-/**
- * Created by Nikhil on 26/09/2015.
- */
 public class SwitchBoard  extends ListActivity{
 
     /** Called when the activity is first created. */
@@ -19,14 +16,16 @@ public class SwitchBoard  extends ListActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.switchboard);
 
-        ListView listView = getListView();
+        Connection c = (Connection) getIntent().getSerializableExtra("ConnectionHandle");
+        String roomname = getIntent().getStringExtra("title");
+        Bitmap roomimage = getIntent().getParcelableExtra("image");
+
         List<RowItem> rowItems;
 
         rowItems = new ArrayList<RowItem>();
-        String[] switchInfo = getResources().getStringArray(R.array.switches);
 
-        Intent intent = getIntent();
-        Connection c = (Connection) intent.getSerializableExtra("ConnectionHandle");
+        int switchboardID = getResources().getIdentifier(roomname, "array", getPackageName());
+        String[] switchInfo = getResources().getStringArray(switchboardID);
 
         for (int i = 0; i < switchInfo.length; i++) {
             String[] separated = switchInfo[i].split(",");
@@ -36,6 +35,6 @@ public class SwitchBoard  extends ListActivity{
             rowItems.add(item);
         }
 
-        setListAdapter(new CustomListViewAdapter(this, R.layout.list_item, rowItems, c));
+        setListAdapter(new CustomListViewAdapter(this, R.layout.list_item, rowItems, c, roomname));
     }
 }
