@@ -650,12 +650,13 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f0b0005;
+        public static final int abc_search_url_text_holo=0x7f0b0006;
         public static final int abc_search_url_text_normal=0x7f0b0000;
         public static final int abc_search_url_text_pressed=0x7f0b0001;
         public static final int abc_search_url_text_selected=0x7f0b0002;
         public static final int blue=0x7f0b0003;
-        public static final int white=0x7f0b0004;
+        public static final int light_blue=0x7f0b0004;
+        public static final int white=0x7f0b0005;
     }
     public static final class dimen {
         public static final int abc_action_bar_default_height=0x7f070000;
@@ -912,11 +913,13 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0d000c;
         public static final int app_name=0x7f0d000d;
         public static final int connect_button=0x7f0d000e;
-        public static final int missingOptions=0x7f0d000f;
-        public static final int port=0x7f0d0010;
-        public static final int portHint=0x7f0d0011;
-        public static final int server=0x7f0d0012;
-        public static final int serverURIHint=0x7f0d0013;
+        public static final int home_view=0x7f0d000f;
+        public static final int login=0x7f0d0010;
+        public static final int missingOptions=0x7f0d0011;
+        public static final int port=0x7f0d0012;
+        public static final int portHint=0x7f0d0013;
+        public static final int server=0x7f0d0014;
+        public static final int serverURIHint=0x7f0d0015;
     }
     public static final class style {
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f090039;

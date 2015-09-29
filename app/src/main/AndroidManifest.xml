@@ -24,7 +24,8 @@
         </service>
 
         <!-- Main Activity -->
-        <activity android:name="org.eclipse.paho.android.service.sample.ArduinoConnection" >
+        <activity android:name="org.eclipse.paho.android.service.sample.ArduinoConnection"
+                  android:label="@string/login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +34,8 @@
         </activity>
 
         <!-- HomeView -->
-        <activity android:name="org.eclipse.paho.android.service.sample.HomeView" >
+        <activity android:name="org.eclipse.paho.android.service.sample.HomeView"
+            android:label="@string/home_view" >
 
         </activity>
 

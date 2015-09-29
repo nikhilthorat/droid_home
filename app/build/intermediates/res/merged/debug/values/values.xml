@@ -109,6 +109,7 @@
     <!-- From: file:/D:/Android%20Dev/Source/HomeAutomation/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="blue">#00abea</color>
+    <color name="light_blue">#007299</color>
     <color name="white">#ffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr format="dimension" name="itemPadding"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
@@ -166,6 +167,8 @@
     <eat-comment/>
     <string name="app_name">Home Automation</string>
     <string name="connect_button">Connect To Home</string>
+    <string name="home_view">Home View</string>
+    <string name="login">Login To Home</string>
     <string name="missingOptions">Server address or Port number is missing. Please correct or press back arrow cancel.</string>
     <string name="port">Port</string>
     <string name="portHint">1883</string>

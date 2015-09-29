@@ -45,7 +45,7 @@ public class GridViewAdapter extends ArrayAdapter {
         }
 
         RoomImageItem item = (RoomImageItem)data.get(position);
-        holder.imageTitle.setText(item.getTitle());
+        holder.imageTitle.setText(item.getTitle().toUpperCase());
         holder.image.setImageBitmap(item.getImage());
         return row;
     }

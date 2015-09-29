@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import android.app.ListActivity;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Switch;
@@ -19,9 +20,11 @@ public class SwitchBoard  extends ListActivity{
         Connection c = (Connection) getIntent().getSerializableExtra("ConnectionHandle");
         String roomname = getIntent().getStringExtra("title");
         Bitmap roomimage = getIntent().getParcelableExtra("image");
+        setTitle(roomname.toUpperCase());
+        BitmapDrawable icon = new BitmapDrawable(getResources(), roomimage);
+        getActionBar().setIcon(icon);
 
         List<RowItem> rowItems;
-
         rowItems = new ArrayList<RowItem>();
 
         int switchboardID = getResources().getIdentifier(roomname, "array", getPackageName());

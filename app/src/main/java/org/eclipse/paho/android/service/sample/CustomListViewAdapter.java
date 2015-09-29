@@ -80,7 +80,7 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem> {
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
-                String switchName = (String) buttonView.getTag();
+                String switchName = ((String) buttonView.getTag()).toUpperCase();
 
                 if (isChecked) {
                     c.publish(switchName, "ON");
