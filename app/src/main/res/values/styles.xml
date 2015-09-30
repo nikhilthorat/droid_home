@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="LoginActionBarTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/LoginActionBarStyle</item>
+    </style>
+
+    <style name="HomeViewActionBarTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/HomeViewActionBarStyle</item>
+    </style>
+
+    <style name="SwitchBoardActionBarTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/SwitchBoardActionBarStyle</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="LoginActionBarStyle"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/dark_blue</item>
+    </style>
+
+
+    <style name="HomeViewActionBarStyle"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/dark_orange</item>
+    </style>
+
+    <style name="SwitchBoardActionBarStyle"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/blue</item>
+    </style>
+
+</resources>

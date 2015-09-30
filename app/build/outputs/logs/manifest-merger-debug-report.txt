@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:1:1-48:12
+ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:1:1-51:12
 	xmlns:android
 		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:1:11-69
 	package
@@ -41,7 +41,7 @@ ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:14:22-76
 application
-ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:16:5-46:19
+ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:16:5-49:19
 MERGED from [com.android.support:appcompat-v7:18.0.0] D:\Android Dev\Source\HomeAutomation\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\18.0.0\AndroidManifest.xml:19:5-20
 	android:label
 		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:19:9-41
@@ -50,34 +50,40 @@ MERGED from [com.android.support:appcompat-v7:18.0.0] D:\Android Dev\Source\Home
 	android:icon
 		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:18:9-48
 	android:theme
-		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:20:9-53
+		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:20:9-67
 service#org.eclipse.paho.android.service.MqttService
 ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:23:9-24:19
 	android:name
 		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:23:18-77
 activity#org.eclipse.paho.android.service.sample.ArduinoConnection
-ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:27:9-34:20
+ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:27:9-35:20
 	android:label
 		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:28:19-48
+	android:theme
+		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:29:19-61
 	android:name
 		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:27:19-91
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:33:27-74
 activity#org.eclipse.paho.android.service.sample.HomeView
-ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:37:9-40:20
+ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:38:9-42:20
 	android:label
-		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:38:13-46
+		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:39:13-46
+	android:theme
+		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:40:13-58
 	android:name
-		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:37:19-82
+		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:38:19-82
 activity#org.eclipse.paho.android.service.sample.SwitchBoard
-ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:43:9-45:20
+ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:45:9-48:20
+	android:theme
+		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:46:19-67
 	android:name
-		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:43:19-85
+		ADDED from D:\Android Dev\Source\HomeAutomation\app\src\main\AndroidManifest.xml:45:19-85

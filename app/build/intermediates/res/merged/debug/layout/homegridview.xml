@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent = "true"
         android:layout_margin="5dp"
-        android:columnWidth="130dp"
+        android:columnWidth="100dp"
         android:drawSelectorOnTop="true"
         android:gravity="center"
         android:numColumns="2"

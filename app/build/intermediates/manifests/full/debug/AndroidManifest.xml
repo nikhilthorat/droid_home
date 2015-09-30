@@ -18,7 +18,7 @@
         android:allowBackup="true"
         android:icon="@drawable/homeautomation"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.Light" >
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
 
         <!-- Mqtt Service -->
         <service android:name="org.eclipse.paho.android.service.MqttService" >
@@ -27,7 +27,8 @@
         <!-- Main Activity -->
         <activity
             android:name="org.eclipse.paho.android.service.sample.ArduinoConnection"
-            android:label="@string/login" >
+            android:label="@string/login"
+            android:theme="@style/LoginActionBarTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,11 +39,14 @@
         <!-- HomeView -->
         <activity
             android:name="org.eclipse.paho.android.service.sample.HomeView"
-            android:label="@string/home_view" >
+            android:label="@string/home_view"
+            android:theme="@style/HomeViewActionBarTheme" >
         </activity>
 
         <!-- Switch Board -->
-        <activity android:name="org.eclipse.paho.android.service.sample.SwitchBoard" >
+        <activity
+            android:name="org.eclipse.paho.android.service.sample.SwitchBoard"
+            android:theme="@style/SwitchBoardActionBarTheme" >
         </activity>
     </application>
 
