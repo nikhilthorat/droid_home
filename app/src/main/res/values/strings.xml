@@ -29,6 +29,23 @@
         <item>TUBE1,tube</item>
         <item>TUBE2,tube</item>
         <item>TV1,tv</item>
+        <item>BULB3,bulb</item>
+        <item>CFL2,cfl</item>
+        <item>BULB4,bulb</item>
+        <item>TUBE3,tube</item>
+        <item>TUBE4,tube</item>
+        <item>TV2,tv</item>
+        <item>BULB5,bulb</item>
+        <item>CFL3,cfl</item>
+        <item>BULB6,bulb</item>
+        <item>TUBE5,tube</item>
+        <item>TUBE6,tube</item>
+        <item>TV3,tv</item>
+        <item>BULB7,bulb</item>
+        <item>BULB8,bulb</item>
+        <item>BULB9,bulb</item>
+        <item>BULB10,bulb</item>
+        <item>BULB11,bulb</item>
     </string-array>
 
     <string-array name="bedroom1">

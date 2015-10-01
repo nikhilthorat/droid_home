@@ -3,6 +3,6 @@
 
     <item android:drawable="@color/grey" android:state_pressed="true" />
     <item android:drawable="@color/grey" android:state_selected="true" />
-    <item android:drawable="@color/light_yellow" />
+    <item android:drawable="@color/light_seagreen" />
 
-</selector><!-- From: file:/D:/Android%20Dev/Source/HomeAutomation/app/src/main/res/drawable/grid_color_selector.xml -->
+</selector>

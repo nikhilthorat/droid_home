@@ -21,6 +21,23 @@
         <item>TUBE1,tube</item>
         <item>TUBE2,tube</item>
         <item>TV1,tv</item>
+        <item>BULB3,bulb</item>
+        <item>CFL2,cfl</item>
+        <item>BULB4,bulb</item>
+        <item>TUBE3,tube</item>
+        <item>TUBE4,tube</item>
+        <item>TV2,tv</item>
+        <item>BULB5,bulb</item>
+        <item>CFL3,cfl</item>
+        <item>BULB6,bulb</item>
+        <item>TUBE5,tube</item>
+        <item>TUBE6,tube</item>
+        <item>TV3,tv</item>
+        <item>BULB7,bulb</item>
+        <item>BULB8,bulb</item>
+        <item>BULB9,bulb</item>
+        <item>BULB10,bulb</item>
+        <item>BULB11,bulb</item>
     </string-array>
     <string-array name="image_ids">
         <item>hall1</item>
@@ -110,11 +127,17 @@
     <eat-comment/>
     <color name="blue">#00abea</color>
     <color name="dark_blue">#007299</color>
+    <color name="dark_coral">#c06666</color>
     <color name="dark_green">#003c00</color>
     <color name="dark_grey">#203737</color>
     <color name="dark_orange">#ee7600</color>
     <color name="dark_red">#b20000</color>
-    <color name="red">#ff0000</color>
+    <color name="grey">#a8a8a8</color>
+    <color name="light_green">#adebad</color>
+    <color name="light_seagreen">#d2efee</color>
+    <color name="light_yellow">#ffff99</color>
+    <color name="maroon">#992f2f</color>
+    <color name="red">#ef4444</color>
     <color name="white">#ffffff</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr format="dimension" name="itemPadding"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
@@ -194,7 +217,7 @@
         <item name="android:actionBarStyle">@style/LoginActionBarStyle</item>
     </style>
     <style name="SwitchBoardActionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/blue</item>
+        <item name="android:background">@color/dark_coral</item>
     </style>
     <style name="SwitchBoardActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/SwitchBoardActionBarStyle</item>

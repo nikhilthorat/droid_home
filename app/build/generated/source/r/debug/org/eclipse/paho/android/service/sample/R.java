@@ -650,18 +650,24 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f0b000b;
+        public static final int abc_search_url_text_holo=0x7f0b0011;
         public static final int abc_search_url_text_normal=0x7f0b0000;
         public static final int abc_search_url_text_pressed=0x7f0b0001;
         public static final int abc_search_url_text_selected=0x7f0b0002;
         public static final int blue=0x7f0b0003;
         public static final int dark_blue=0x7f0b0004;
-        public static final int dark_green=0x7f0b0005;
-        public static final int dark_grey=0x7f0b0006;
-        public static final int dark_orange=0x7f0b0007;
-        public static final int dark_red=0x7f0b0008;
-        public static final int red=0x7f0b0009;
-        public static final int white=0x7f0b000a;
+        public static final int dark_coral=0x7f0b0005;
+        public static final int dark_green=0x7f0b0006;
+        public static final int dark_grey=0x7f0b0007;
+        public static final int dark_orange=0x7f0b0008;
+        public static final int dark_red=0x7f0b0009;
+        public static final int grey=0x7f0b000a;
+        public static final int light_green=0x7f0b000b;
+        public static final int light_seagreen=0x7f0b000c;
+        public static final int light_yellow=0x7f0b000d;
+        public static final int maroon=0x7f0b000e;
+        public static final int red=0x7f0b000f;
+        public static final int white=0x7f0b0010;
     }
     public static final class dimen {
         public static final int abc_action_bar_default_height=0x7f070000;
@@ -772,15 +778,17 @@ containing a value of this type.
         public static final int bedroom1=0x7f020057;
         public static final int bedroom2=0x7f020058;
         public static final int bulb=0x7f020059;
-        public static final int cfl=0x7f02005a;
-        public static final int grid_color_selector=0x7f02005b;
-        public static final int hall1=0x7f02005c;
-        public static final int hall2=0x7f02005d;
-        public static final int homeautomation=0x7f02005e;
-        public static final int ic_launcher=0x7f02005f;
-        public static final int kitchen=0x7f020060;
-        public static final int tube=0x7f020061;
-        public static final int tv=0x7f020062;
+        public static final int button_selector=0x7f02005a;
+        public static final int cfl=0x7f02005b;
+        public static final int grid_color_selector=0x7f02005c;
+        public static final int hall1=0x7f02005d;
+        public static final int hall2=0x7f02005e;
+        public static final int homeautomation=0x7f02005f;
+        public static final int ic_launcher=0x7f020060;
+        public static final int kitchen=0x7f020061;
+        public static final int list_color_selector=0x7f020062;
+        public static final int tube=0x7f020063;
+        public static final int tv=0x7f020064;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f0c0045;

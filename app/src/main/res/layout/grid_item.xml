@@ -1,22 +1,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
     android:background="@drawable/grid_color_selector"
     android:orientation="vertical"
     android:padding="5dp">
 
     <ImageView
         android:id="@+id/roomimage"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_width="130dp"
+        android:layout_height="130dp" />
 
     <TextView
         android:id="@+id/roomname"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
         android:gravity="center"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
 </LinearLayout>
